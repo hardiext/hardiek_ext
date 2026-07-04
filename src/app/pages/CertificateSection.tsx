@@ -14,6 +14,7 @@ import cert6 from '@/app/assets/images/certificate6.jpeg'
 import cert7 from '@/app/assets/images/certificate7.jpeg'
 import cert8 from '@/app/assets/images/certificate8.jpeg'
 import cert9 from '@/app/assets/images/certificate9.jpeg'
+import cert10 from '@/app/assets/images/certificate10.jpeg'
 
 interface Certificate {
     id: string;
@@ -31,15 +32,16 @@ const CertificatesSection: React.FC = () => {
     const { scrollXProgress } = useScroll({ container: targetRef });
     
     const certificates: Certificate[] = [
-        { id: "01", title: "Advanced Software Engineering", issuer: "SMK Telkom Purwokerto", src: cert1, serial: "SEC-RPL-2024-001" },
-        { id: "02", title: "Full-Stack System Architecture", issuer: "PT Diginet Media", src: cert2, serial: "DIGI-INTERN-9982" },
-        { id: "03", title: "Computer Science Specialization", issuer: "Telkom University", src: cert3, serial: "TELU-CS-2025-409" },
-        { id: "04", title: "Mobile UI Layer Engineering", issuer: "Global Tech Index", src: cert4, serial: "GTI-FLUTTER-883" },
-        { id: "05", title: "Network Security & Packet Audit", issuer: "Cyber Operations Lab", src: cert5, serial: "WIRESHARK-ANLYS-02" },
-        { id: "06", title: "Asynchronous State Control", issuer: "Enterprise Node", src: cert6, serial: "ASYNC-JS-9910" },
-        { id: "07", title: "Relational Database Structure", issuer: "Telkom Academy", src: cert7, serial: "DB-SQL-CORE-441" },
-        { id: "08", title: "Web3 Cryptographic Handshake", issuer: "Decentralized Auth", src: cert8, serial: "WEB3-METAMASK-77" },
-        { id: "09", title: "Object-Oriented Architecture", issuer: "Sains Komputer Core", src: cert9, serial: "OOP-JAVA-TOMCAT-8" },
+        { id: "01", title: "Aws Academy Cloud", issuer: "Aws Academy Cloud", src: cert2, serial: "AWS-2024-0119" },
+        { id: "02", title: "Internship Diginet Media", issuer: "PT-Diginet Media", src: cert1, serial: "DIGI-INTERN-9982" },
+        { id: "03", title: "UI/UX Compettion", issuer: "FTI-FEST", src: cert3, serial: "FTIFEST-UI/UX-2025-32023" },
+        { id: "04", title: "UI/UX Compettion", issuer: "UNIDA", src: cert4, serial: "UNIDA-UI/UX-2024" },
+        { id: "05", title: "HACKER RANK PROBLEM", issuer: "Hackerank", src: cert5, serial: "REACT-2024-22" },
+        { id: "06", title: "Beginer Backend with JS", issuer: "DICODING", src: cert6, serial: "DICODING-JS-9910" },
+        { id: "07", title: "HACKER RANK PROBLEM", issuer: "Hackerank", src: cert7, serial: "REACT-2024-22" },
+        { id: "08", title: "MERDEKA HACK", issuer: "SIRCLE", src: cert8, serial: "TELU-2024" },
+        { id: "09", title: "frontend Development", issuer: "FreecodeCamp", src: cert9, serial: "FC-FE-2025" },
+        { id: "10", title: "Backend Development", issuer: "FreecodeCamp", src: cert10, serial: "FC-BE-2025" },
      
     ];
 

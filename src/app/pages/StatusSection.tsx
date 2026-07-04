@@ -43,7 +43,7 @@ const StatusSection: React.FC = () => {
         if (isOverclocked && countdown > 0 && !isExploded) {
             timer = setTimeout(() => setCountdown(countdown - 1), 1000)
         } else if (isOverclocked && countdown === 0 && !isExploded) {
-            setIsExploded(true) // MELEDAK!
+            setIsExploded(true) 
         }
         return () => clearTimeout(timer)
     }, [isOverclocked, countdown, isExploded])
