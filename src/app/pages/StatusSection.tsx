@@ -112,7 +112,7 @@ const StatusSection: React.FC = () => {
                     >
                         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f1f1f18_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f18_1px,transparent_1px)] bg-size-[14px_14px] pointer-events-none" />
                         
-                        <div className="w-full max-w-5xl mx-auto mb-8 flex items-center justify-between border-b pb-4 border-neutral-900">
+                        <div className="w-full max-w-5xl mx-auto mb-8 lg:flex-row flex-col  flex items-center justify-between border-b pb-4 border-neutral-900">
                             <div className="flex items-center gap-3">
                                 <span className="relative flex h-2 w-2">
                                     <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${isOverclocked ? 'bg-red-500' : 'bg-emerald-500'}`}></span>
@@ -132,7 +132,7 @@ const StatusSection: React.FC = () => {
                                         setIsOverclocked(true)
                                     }
                                 }}
-                                className={`px-3 py-1 text-[9px] font-bold tracking-widest uppercase border transition-all duration-300 cursor-pointer ${
+                                className={`px-3 py-2 lg:mt-0 mt-4 text-[9px] font-bold tracking-widest uppercase border transition-all duration-300 cursor-pointer ${
                                     isOverclocked 
                                     ? 'bg-red-600 border-red-400 text-white shadow-[0_0_20px_rgba(220,38,38,0.6)] animate-bounce' 
                                     : 'bg-neutral-900 border-neutral-800 text-neutral-500 hover:text-red-500 hover:border-red-900'
